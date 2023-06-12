@@ -1,0 +1,74 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.card{
+    width: 25%;
+    max-width: 300px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 980px) {
+    .card{
+
+        background-color: red;
+        margin: auto auto 10px;
+}   
+}
+
+/* @media screen and (max-width: 480px) {
+    .card{
+        width: 95%;
+           }   
+}   */
+
+.card{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    animation-name: hiii;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+                     
+@keyframes hiii {
+    0%{
+        margin-left: 500px;
+    }
+}
+.card1{
+    animation-timing-function: linear;
+
+}
+
+.card2{
+    animation-timing-function: ease;
+    
+}
+
+.card3{
+    animation-timing-function: ease-in;
+    
+}
+
+.card4{
+    animation-timing-function: ease-out;
+    
+}
+
+.card5{
+    animation-timing-function: ease-in-out;
+    
+}
